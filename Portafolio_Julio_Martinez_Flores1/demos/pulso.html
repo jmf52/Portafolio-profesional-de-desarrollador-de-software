@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1c1d1b"><title>Pulso · Metrónomo de ensayo</title><link rel="icon" href="../assets/icono.png"><link rel="stylesheet" href="../css/estilos.css"><link rel="stylesheet" href="../css/demos.css"><script defer src="pulso.js"></script></head>
+<body class="demo"><a class="salto" href="#principal">Saltar al contenido</a>
+<header class="cabecera"><div class="ancho barra"><a class="marca" href="../index.html"><span class="marca-icono" aria-hidden="true">&gt;_</span><span>Portafolio<span class="punto">.</span></span></a><a class="volver" href="../index.html#proyectos">Volver a proyectos</a></div></header>
+<main class="ancho escenario" id="principal">
+  <div class="encabezado-demo"><p class="ceja">Demo de muestra · Audio interactivo</p><h1>Pulso</h1><p>Elige el tempo y el compás de tu ensayo. El primer tiempo suena más agudo para marcar el inicio del compás.</p></div>
+  <div class="consola">
+    <div class="visor"><p>TEMPO</p><output id="lectura-bpm" class="bpm-digital" for="tempo">096</output><p>BPM</p><div class="batutas" id="batutas" aria-hidden="true"></div></div>
+    <section class="controles" aria-labelledby="ajustes"><h2 id="ajustes">Ajustes de ensayo</h2><label for="tempo">Pulsos por minuto</label><input type="range" id="tempo" min="40" max="220" step="1" value="96"><label for="compas">Compás</label><select id="compas"><option value="2">2/4 · Dos tiempos</option><option value="3">3/4 · Tres tiempos</option><option value="4" selected>4/4 · Cuatro tiempos</option></select><button type="button" id="iniciar" class="accion" aria-pressed="false">Iniciar metrónomo</button><p class="estado-ayuda" id="estado-audio" role="status">En pausa.</p></section>
+  </div>
+  <noscript><p>Activa JavaScript para iniciar el metrónomo.</p></noscript>
+</main></body></html>
