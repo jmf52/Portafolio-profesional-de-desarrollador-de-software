@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1c1d1b">
+  <meta name="description" content="Portafolio de evidencias de desarrollo de software para la evaluación individual del tercer parcial.">
+  <title>Portafolio de evidencias · Desarrollo de software</title>
+  <link rel="icon" href="assets/icono.png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script defer src="datos.js"></script>
+  <script defer src="js/portafolio.js"></script>
+</head>
+<body id="inicio">
+  <a class="salto" href="#principal">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="ancho barra">
+      <a href="#inicio" class="marca" aria-label="Portafolio, inicio"><span class="marca-icono" aria-hidden="true">&gt;_</span><span>Portafolio<span class="punto">.</span></span></a>
+      <button type="button" class="boton-menu" aria-expanded="false" aria-controls="menu-principal">Menú <span aria-hidden="true" class="hamburguesa"></span></button>
+      <nav id="menu-principal" aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a><a href="#perfil">Perfil</a><a href="#tecnologias">Tecnologías</a><a class="nav-contacto" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main id="principal">
+    <section class="portada" aria-labelledby="titulo">
+      <div class="ancho portada-contenido">
+        <div class="portada-texto">
+          <p class="ceja ceja-portada"><span aria-hidden="true"></span> Desarrollo de software</p>
+          <h1 id="titulo">Portafolio de<br><em>evidencias.</em></h1>
+          <p id="resumen-portada">Aplicaciones, pruebas y decisiones técnicas para la evaluación individual del tercer parcial.</p>
+          <div class="portada-acciones">
+            <a class="boton boton-acento" href="#proyectos"><span class="icono-cuadros" aria-hidden="true"></span>Ver proyectos</a>
+            <a class="enlace-claro" href="#perfil">Ver perfil</a>
+          </div>
+        </div>
+        <div class="portada-arte" aria-hidden="true"><img src="assets/terminal.webp" width="1080" height="720" alt="" fetchpriority="high"></div>
+      </div>
+    </section>
+    <section class="seccion proyectos" id="proyectos" aria-labelledby="titulo-proyectos">
+      <div class="ancho">
+        <div class="cabecera-seccion"><h2 id="titulo-proyectos">Proyectos destacados<span class="punto">.</span></h2><p id="introduccion-proyectos"></p></div>
+        <div class="rejilla-proyectos" id="lista-proyectos"></div>
+        <noscript><p>Activa JavaScript para ver las fichas. Puedes abrir las tres demos desde estos enlaces.</p><ul><li><a href="demos/pulso.html">Pulso</a></li><li><a href="demos/bitacora.html">Bitácora QA</a></li><li><a href="demos/desglose.html">Desglose</a></li></ul></noscript>
+      </div>
+    </section>
+    <section class="seccion perfil" id="perfil" aria-labelledby="titulo-perfil">
+      <div class="ancho">
+        <div class="cabecera-seccion"><h2 id="titulo-perfil">Perfil y formación<span class="punto">.</span></h2></div>
+        <div class="perfil-rejilla">
+          <figure class="foto" id="foto-perfil">
+            <div class="foto-reserva"><span aria-hidden="true" class="camara"></span><span>Fotografía pendiente</span></div>
+          </figure>
+          <div class="perfil-texto">
+            <p class="ceja">Sobre mí</p><h3 id="nombre-perfil">Nombre por completar</h3>
+            <p id="bio-perfil">Presentación personal pendiente.</p>
+            <p id="ubicacion-perfil" class="ubicacion" hidden></p>
+          </div>
+          <div class="estudios"><p class="ceja">Estudios</p><div id="lista-estudios"><p>Institución, carrera y semestre pendientes.</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="seccion tecnologias" id="tecnologias" aria-labelledby="titulo-tecnologias">
+      <div class="ancho tecnologia-rejilla">
+        <div><h2 id="titulo-tecnologias">Perfil técnico<span class="punto">.</span></h2><p class="nota-tecnica" id="nota-tecnica"></p></div>
+        <dl id="lista-tecnologias" class="lista-tecnologias"></dl>
+      </div>
+    </section>
+    <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="ancho contacto-interior"><div><h2 id="titulo-contacto">Contacto<span class="punto">.</span></h2><p id="nota-contacto">Correo y perfil de GitHub pendientes de incorporar.</p></div><div id="canales" class="canales"></div></div>
+    </section>
+  </main>
+  <footer><div class="ancho pie"><span id="credito">Evaluación individual · Tercer parcial</span><div><button id="imprimir" type="button">Imprimir portafolio</button><a href="#inicio">Volver al inicio</a></div></div></footer>
+  <dialog id="ficha" aria-labelledby="ficha-titulo">
+    <div class="ficha-barra"><span class="ceja" id="ficha-tipo">Ficha técnica</span><button type="button" id="cerrar-ficha" class="cerrar" aria-label="Cerrar ficha técnica">×</button></div>
+    <h2 id="ficha-titulo"></h2><p id="ficha-resumen" class="ficha-resumen"></p>
+    <dl id="ficha-contenido" class="ficha-contenido"></dl><div class="ficha-enlaces" id="ficha-enlaces"></div>
+  </dialog>
+
+  <!-- Portadas ilustradas de las demos. Cada proyecto admite también su propia captura en datos.js. -->
+  <template id="arte-pulso"><div class="mini-pulso"><div class="pantalla-pulso"><span>096</span><small>BPM</small></div><i class="dial"></i><div class="luces"><i></i><i></i><i></i><i></i></div><div class="ranuras"></div></div></template>
+  <template id="arte-bitacora"><div class="hoja-atras"></div><div class="hoja-qa"><div class="hoja-cabeza"><strong>QA</strong><i></i></div><div class="tarea-mini"><b>✓</b><i></i></div><div class="tarea-mini"><b>✓</b><i></i></div><div class="tarea-mini"><b></b><i></i></div></div></template>
+  <template id="arte-desglose"><div class="grafico-mini"><i></i><i></i><i></i><i></i><i></i></div><div class="recibo-mini"><div><b>MXN</b><i></i></div><div class="renglon-recibo"></div><div class="renglon-recibo"></div><div class="renglon-recibo"></div><div class="total-mini">TOTAL <b>∑</b></div></div></template>
+</body>
+</html>
