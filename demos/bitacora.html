@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#1c1d1b"><title>Bitácora QA · Casos de prueba</title><link rel="icon" href="../assets/icono.png"><link rel="stylesheet" href="../css/estilos.css"><link rel="stylesheet" href="../css/demos.css"><script defer src="bitacora.js"></script></head>
+<body class="demo"><a class="salto" href="#principal">Saltar al contenido</a>
+<header class="cabecera"><div class="ancho barra"><a class="marca" href="../index.html"><span class="marca-icono" aria-hidden="true">&gt;_</span><span>Portafolio<span class="punto">.</span></span></a><a class="volver" href="../index.html#proyectos">Volver a proyectos</a></div></header>
+<main class="ancho escenario" id="principal">
+  <div class="encabezado-demo"><p class="ceja">Demo de muestra · Pruebas de software</p><h1>Bitácora QA</h1><p>Registra qué quieres comprobar, define el resultado esperado y actualiza el estado después de ejecutar la prueba.</p></div>
+  <div class="qa-grid">
+    <section class="panel-demo panel-qa" aria-labelledby="nuevo"><h2 id="nuevo">Nuevo caso de prueba</h2>
+      <form id="formulario-caso"><fieldset id="entradas" disabled><label for="caso">Nombre del caso</label><input id="caso" required maxlength="90" autocomplete="off" placeholder="Ej. Recuperar un registro"><label for="esperado">Resultado esperado</label><textarea id="esperado" required maxlength="300" rows="3" placeholder="Describe qué debería ocurrir"></textarea><button class="accion" type="submit">Guardar caso</button></fieldset></form>
+      <p id="estado-bitacora" role="status"></p>
+    </section>
+    <section class="resultados" aria-labelledby="mis-casos"><div class="cabecera-lista"><h2 id="mis-casos">Casos de prueba</h2><div class="filtro-qa"><label for="filtro">Filtrar</label><select id="filtro"><option value="Todos">Todos</option><option>Pendiente</option><option>Aprobado</option><option>Fallido</option></select></div></div><ul class="lista-casos" id="casos"></ul><p id="sin-casos" hidden>No hay casos con este estado.</p><p class="almacenamiento" id="almacenamiento">Abriendo la bitácora…</p></section>
+  </div>
+  <noscript><p>Activa JavaScript para registrar y consultar los casos de prueba.</p></noscript>
+</main></body></html>
