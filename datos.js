@@ -11,6 +11,8 @@ window.PORTAFOLIO = {
     foto: "assets/perfil.jpg",
     correo: "23302108@utfv.edu.mx",
     github: "https://github.com/jmf52",
+    telefono: "59-71-22-03-35",
+    correo: "23302108@utfv.edu.mx",
     estudios: [
       {
         carrera: "Ingeniería en Desarrollo de Software",
