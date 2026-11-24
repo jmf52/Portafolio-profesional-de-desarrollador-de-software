@@ -1,4 +1,3 @@
-
 window.PORTAFOLIO = {
   perfil: {
     nombre: "Julio Martínez Flores",
@@ -6,16 +5,13 @@ window.PORTAFOLIO = {
     ubicacion: "Emiliano Zapata S/N, El Tráfico, 54400, Ciudad Nicolás Romero, Estado de México",
     foto: "assets/perfil.jpg",
     correo: "23302108@utfv.edu.mx",
-    github: "https://github.com/jmf52",
     telefono: "59-71-22-03-35",
-    correo: "23302108@utfv.edu.mx",
+    github: "https://github.com/jmf52",
     estudios: [
       {
         carrera: "Ingeniería en Desarrollo de Software",
         institucion: "Universidad Tecnológica Fidel Velázquez",
-        periodo: "Inicio: 2024 · Décimo cuatrimestre",
-        telefono: "59-71-22-03-35",
-        correo: "23302108@utfv.edu.mx",
+        periodo: "Inicio: 2024 · Décimo cuatrimestre"
       }
     ],
   
