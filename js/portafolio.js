@@ -180,10 +180,21 @@ function mostrarTecnologias() {
 function mostrarContacto() {
   const canales = porId("canales");
   const correo = (perfil.correo || "").trim();
+  const telefono = (perfil.telefono || "").trim();
   const github = rutaValida(perfil.github);
-  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) canales.append(enlace(correo, "mailto:" + correo));
-  if (github) canales.append(enlace("Perfil en GitHub", github));
-  if (canales.childElementCount) porId("nota-contacto").textContent = "Canales de contacto y consulta de proyectos.";
+
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) {
+    canales.append(enlace(correo, "mailto:" + correo));
+  }
+  if (telefono) {
+    canales.append(enlace(telefono, "tel:+52" + telefono.replace(/\D/g, "")));
+  }
+  if (github) {
+    canales.append(enlace("Perfil en GitHub", github));
+  }
+  if (canales.childElementCount) {
+    porId("nota-contacto").textContent = "Canales de contacto y consulta de proyectos.";
+  }
 }
 
 const menu = porId("menu-principal");
