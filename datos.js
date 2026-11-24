@@ -1,8 +1,4 @@
-/*
- * Portafolio personal de Julio Martínez Flores.
- * Para agregar tu fotografía, guarda el archivo como assets/perfil.jpg
- * y cambia perfil.foto a "assets/perfil.jpg".
- */
+
 window.PORTAFOLIO = {
   perfil: {
     nombre: "Julio Martínez Flores",
@@ -17,10 +13,12 @@ window.PORTAFOLIO = {
       {
         carrera: "Ingeniería en Desarrollo de Software",
         institucion: "Universidad Tecnológica Fidel Velázquez",
-        periodo: "Inicio: 2024 · Décimo cuatrimestre"
+        periodo: "Inicio: 2024 · Décimo cuatrimestre",
+        telefono: "59-71-22-03-35",
+        correo: "23302108@utfv.edu.mx",
       }
     ],
-    // Tecnologías de formación y proyectos académicos; ajusta la lista a tu experiencia real.
+  
     lenguajes: ["Java", "Python", "JavaScript", "HTML5", "CSS3", "PHP"],
     plataformas: ["Android Studio", "Visual Studio Code", "Git", "GitHub", "Docker"],
     basesDeDatos: ["MongoDB", "MySQL", "SQLite", "Firebase"]
